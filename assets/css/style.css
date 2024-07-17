@@ -1,0 +1,263 @@
+/*DEBUT DU DARKMODE*/
+body {
+    background-color: white;
+    color: #333;
+}
+
+button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+button:hover {
+    background-color: #565656;
+
+}
+
+button:hover img {
+    filter: invert(0);
+}
+
+body.dark-mode {
+    background-color: #242424;
+    color: white;
+    transition: filter 0.5s ease;
+}
+
+body.dark-mode button {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode button:hover {
+    background-color: #565656;
+    color: white;
+}
+
+body.dark-mode .menuItem {
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.darkmode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.darkmode img {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.5s ease;
+    filter: brightness(0.7);
+}
+
+body.dark-mode .darkmode img:hover {
+    filter: invert(0);
+}
+
+.burger img {
+    filter: brightness(0.4);
+    /* Lighter in white mode */
+    transition: filter 0.5s ease;
+    filter: brightness(0.7);
+}
+
+body.dark-mode .burger img {
+    filter: brightness(1) invert(1);
+}
+
+/* FIN DU DARKMODE*/
+#volume-slider {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.volume-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.volume-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50px;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #4CAF50;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* DEBUT MENU BURGER*/
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu {
+    position: absolute;
+    top: 30px; /* Adjust based on your header height */
+    right: 0;
+    min-width: 60px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menuItem {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menuItem:hover {
+    background-color: #e0e0e0;
+}
+
+.submenu {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: -100%;
+    top: 0;
+
+}
+
+.submenu li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.relative:hover .submenu {
+    display: block;
+}
+
+/* FIN DU MENUBURGER*/
+nav ul li img {
+    width: 30px;
+
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.settings-container {
+    position: relative;
+}
+
+.settings-submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.settings-container:hover .settings-submenu {
+    display: block;
+}
+
+.settings-submenu li {
+    margin-bottom: 10px;
+}
+
+.settings-submenu li:last-child {
+    margin-bottom: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+button.burger aside {
+    width: 200px;
+    float: right;
+    padding: 15px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#canvasLauncher {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 60px; /* Adjust based on your header height */
+    box-sizing: border-box;
+}
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+nav {
+    position: absolute;
+    left: 20px;
+}
+
+.burger {
+    position: absolute;
+    right: 20px;
+}

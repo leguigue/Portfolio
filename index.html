@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/guillaume.guuti?locale=fr_FR">
+            <img src="./assets/images/facebook.svg" alt="facebook">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/guillaumeguuti/">
+            <img src="./assets/images/instagram.svg" alt="instagram">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/guillaume-gutierrez-quintas-23521a319/">
+            <img src="./assets/images/linkedin.svg" alt="linkedin">
+          </a>
+        </li>
+        <li>
+          <a href="https://discord.gg/pfcn7sFUU6">
+            <img src="./assets/images/discorde.svg" alt="discord">
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/leguigue?tab=repositories">
+            <img src="./assets/images/github.svg" alt="github">
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h1>Guillaume Gutierrez Quintas</h1>
+    <button type="button" class="burger">
+      <img src="./assets/images/menuclosed.svg" id="menuclosed" alt="menu toggle">
+    </button>
+    <ul class="menu">
+      <li class="settings-container">
+        <button class="settings">
+          <img src="./assets/images/settings.svg" alt="settings">
+        </button>
+        <ul class="settings-submenu">
+          <li>
+            <button class="darkmode" id="darkmode">
+              <img src="./assets/images/dark-theme.svg" alt="dark mode">
+            </button>
+          </li>
+          <li>
+            <button class="mute" id="mute">
+              <img src="./assets/images/mute.svg" alt="mute">
+            </button>
+          </li>
+          <li>
+            <input type="range" id="volume-slider" class="volume-slider" min="0" max="100" value="50">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <canvas id="portfolio"></canvas>
+  </main>
+  <script src="assets/js/collisions.js"></script>
+  <script src="assets/js/collisionscontact.js"></script>
+  <script src="./assets/js/classes.js"></script>
+  <script src="assets/js/indexe.js"></script>
+  <script src="assets/js/burgermenu.js"></script>
+  <script src="assets/js/darkmode.js"></script>
+  <script src="assets/js/volumebutton.js"></script>
+
+</body>
+
+</html>
